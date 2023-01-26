@@ -107,6 +107,6 @@ IngameForm.addEventListener('submit',handleInput);
 function regame() {
     location.reload(true);
     location.href = location.href;
-    history.go(-1);
+    history.go(0);
 }
 
