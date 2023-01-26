@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible0" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Number Baseball(cp version)</title>
+    </head>
+    <body>
+        <h1>숫자 야구</h1>
+<!--       <form class="hidden" id="login">
+            <input
+                required
+                maxlength="20"
+                type="text"
+                placeholder="id"
+            />
+            <input type="submit" value="Login" />
+        </form>
+        <form class="hidden" id="creatid">
+            <input type="submit" value="creatid" />
+        </form> -->
+        <form id="start">
+            <input type="button" value="GAME START" onclick='eventGameStartButton()'/>
+        </form>
+        <form id="Ingame" class="hidden">
+            <input
+                required 
+                type="number" 
+                oninput="handleOnInput(this, 4)"
+                placeholder="4자리 숫자를 입력 후 엔터" />
+        </form>
+        <ul id="records">
+
+        </ul>
+        <script src="js/ingame/mainGameRule.js"></script>
+    </body>
+</html>
+
