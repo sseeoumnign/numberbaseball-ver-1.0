@@ -35,14 +35,16 @@ function getNumber() {
     numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     randomArray = [];
     for (var i = 0; i < 4; i++) {
-        if( i == 0 ) {
-            const randomNum = numArray.splice(Math.floor(Math.random() * (9 - i) + 1), 1)[0];
-             randomArray.push(randomNum);
-        } else {
-            const randomNum = numArray.splice(Math.floor(Math.random() * (10 - i)), 1)[0];
-             randomArray.push(randomNum);
+        const randomNum = numArray.splice(Math.floor(Math.random() * (10 - i)), 1)[0];
+            randomArray.push(randomNum);
+        // if( i == 0 ) {
+        //     const randomNum = numArray.splice(Math.floor(Math.random() * (9 - i) + 1), 1)[0];
+        //      randomArray.push(randomNum);
+        // } else {
+        //     const randomNum = numArray.splice(Math.floor(Math.random() * (10 - i)), 1)[0];
+        //      randomArray.push(randomNum);
 
-        }
+        // }  맨 앞자리 숫자가 0이 없는 버젼
     }
     console.log(randomArray);
     return randomArray;
