@@ -83,8 +83,8 @@ function handleInput(event) {
             }
         }
     } 
-    if(inputnumber.length < 4 || inputnumber[0] == 0) {
-        alert(`4자리 숫자로 다시 입력하십시요.`);
+    if(inputnumber.length < 4) {
+        alert(`알맞게 입력하십시요.`);
     } else if (strike == 4) {
         list(`정답입니다. 3초 뒤 시작됩니다.`)
         setTimeout(() => {
